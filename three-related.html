@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/article.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+
+    <title>Native Flowers of Taiwan｜Botanic Gazette</title>
+  </head>
+
+  <body>
+    <header class="header sticky">
+      <a class="header-brand-name" href="index.html"
+        ><h1>Botanic Gazette</h1></a
+      >
+
+      <nav class="header-nav">
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="index.html">Home</a></li>
+            <li><a class="main-nav-link" href="about.html">About</a></li>
+            <li>
+              <a class="main-nav-link" href="collection.html">collection</a>
+            </li>
+            <li><a class="main-nav-link" href="#">News</a></li>
+            <button class="main-nav-btn">Login</button>
+          </ul>
+        </nav>
+
+        <button class="search-icon">
+          <ion-icon name="search-outline" class="search-btn"></ion-icon>
+          <ion-icon name="close-outline" class="close-btn"></ion-icon>
+        </button>
+
+        <button class="mobile-nav-btn">
+          <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+          <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </button>
+      </nav>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search here..." />
+      </div>
+    </header>
+
+    <!--==================== LOGIN ====================-->
+    <div class="login-wrap">
+      <span class="login-close-icon"><ion-icon name="close"></ion-icon></span>
+
+      <!--================== LOGIN ==================-->
+      <div class="login-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="mail-outline"></ion-icon
+            ></span>
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="lock-closed-outline"></ion-icon
+            ></span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="remember-forget">
+            <label><input type="checkbox" />Remember me</label>
+            <a href="#">Forget Password?</a>
+          </div>
+          <button type="submit" class="login-btn">Login</button>
+          <div class="login-register">
+            <p>
+              Don't have an account?
+              <a href="#" class="register-link">Register</a>
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <!--================== register ==================-->
+      <div class="login-box register">
+        <h2>Register</h2>
+        <form action="#">
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="person-outline"></ion-icon
+            ></span>
+            <input type="text" required />
+            <label>Username</label>
+          </div>
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="mail-outline"></ion-icon
+            ></span>
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="lock-closed-outline"></ion-icon
+            ></span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="remember-forget">
+            <label><input type="checkbox" />I agree to the terms</label>
+          </div>
+          <button type="submit" class="login-btn">Register</button>
+          <div class="login-register">
+            <p>
+              Already have an account?
+              <a href="#" class="login-link">Login</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="main-article">
+      <header class="post-headder">
+        <h2 class="article-title">The Blossoming Native Flowers of Taiwan</h2>
+        <p class="date">Wednesday, September 18th 2024</p>
+
+        <div class="journalist">
+          <p class="author">
+            By
+            <strong>Alex Huang, Lisa Wu, Emily Lin</strong>
+          </p>
+
+          <div class="author-imgs">
+            <img
+              src="img/journalist/alex-huang.jpg"
+              alt="Headshot of alex-huang"
+            />
+            <img src="img/journalist/lisa-wu.jpg" alt="Headshot of lisa-wu" />
+            <img
+              src="img/journalist/emily-lin.jpg"
+              alt="Headshot of emily-lin"
+            />
+          </div>
+
+          <div class="share-and-save">
+            <button class="share" href="#">
+              <span>Share</span>
+              <ion-icon
+                class="share-icon"
+                name="share-social-outline"
+              ></ion-icon>
+            </button>
+
+            <button class="save" href="#">
+              <span>Save</span>
+              <ion-icon class="save-icon" name="flower-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+
+        <img
+          class="journalist-img"
+          src="img/header/three-taiwanese-native.jpg"
+          alt="a close up of a tree with pink flowers"
+        />
+      </header>
+
+      <article class="content">
+        <h3>The Discovery of Taiwan’s Unique Floral Heritage</h3>
+        <p>
+          Taiwan, often known for its breathtaking landscapes and diverse
+          ecosystems, is home to a variety of native flowers that thrive in its
+          subtropical climate.<br /><br />From the vibrant peaks of the central
+          mountains to the coastal lowlands, these endemic species play a
+          crucial role in the island's biodiversity.<br /><br />
+          Some of Taiwan’s most iconic native flowers include:
+        </p>
+        <ol class="list">
+          <li class="content-list">
+            Taiwanese Lily (Lilium formosanum):<br />A stunning white flower
+            often found in the central mountains.
+          </li>
+          <li class="content-list">
+            Taiwan Cherry (Prunus campanulata):<br />Known for its striking pink
+            blossoms that bloom in early spring.
+          </li>
+          <li class="content-list">
+            Formosan Rhododendron (Rhododendron formosanum):<br />A bright pink
+            shrub that adorns the high-altitude regions.
+          </li>
+        </ol>
+        <p>
+          These flowers not only add color to Taiwan's natural landscape but
+          also serve as a vital part of the local ecosystem.
+        </p>
+
+        <h3>The Ecological Importance of Taiwan's Native Species</h3>
+        <p>
+          The native flowers of Taiwan play essential roles in supporting
+          pollinators, preserving soil quality, and maintaining ecological
+          balance.<br /><br />By supporting local flora, Taiwan’s ecosystem
+          remains resilient in the face of environmental changes.<br /><br />
+          Key contributions of native flowers include:
+        </p>
+
+        <ol class="list">
+          <li class="content-list">
+            Pollinator Support:<br />
+            Providing food for bees, butterflies, and other pollinators.
+          </li>
+          <li class="content-list">
+            Soil Preservation:<br />
+            Preventing erosion in mountain areas with their deep root systems.
+          </li>
+          <li class="content-list">
+            Biodiversity Support:<br />
+            Creating habitats for a variety of insects, birds, and small
+            animals.
+          </li>
+        </ol>
+
+        <p>
+          These flowers are integral to sustaining Taiwan’s unique biodiversity
+          and ensuring the health of its natural habitats.
+        </p>
+
+        <h3>Preserving Taiwan’s Floral Treasures for the Future</h3>
+        <p>
+          As Taiwan's landscapes face challenges from urbanization and climate
+          change, conservation efforts are underway to protect these native
+          species.<br /><br />
+          Botanical gardens, environmental organizations, and the government are
+          working together to ensure these flowers can thrive for generations to
+          come.<br /><br />
+          One of the key initiatives includes <strong>seed banks</strong>, which
+          store seeds of rare and endangered species for future restoration
+          projects.<br /><br />
+          Additionally, <strong>botanical gardens</strong> are playing a crucial
+          role in educating the public about the importance of native plants
+          while creating controlled environments to support their growth.<br /><br />
+          <strong>Reforestation projects</strong> are also being implemented to
+          reintroduce native flora to areas impacted by human activity or
+          natural disasters.<br /><br />
+          Through these collaborative efforts, Taiwan aims to preserve its
+          floral treasures, ensuring that the island’s natural beauty and
+          ecological balance remain intact for future generations.
+        </p>
+
+        <nav>
+          <ul class="hashtage-group">
+            <li><a class="hashtage">Taiwan</a></li>
+            <li><a class="hashtage">Tree</a></li>
+            <li><a class="hashtage">Flower</a></li>
+          </ul>
+        </nav>
+      </article>
+    </div>
+
+    <aside class="related">
+      <h4 class="related-title">Related</h4>
+      <ul class="related-list-set">
+        <li class="related-list">
+          <div class="related-post">
+            <img
+              src="img/header/related-white-lily.jpg"
+              alt="close up of a white flower"
+            />
+            <a class="related-post-title" href="lily.html" target="_blank"
+              >Taiwanese Lily</a
+            >
+            <p class="related-author">By Alex Huang</p>
+          </div>
+        </li>
+
+        <li class="related-list">
+          <div class="related-post">
+            <img
+              src="img/header/related-cherry-blossom.jpg"
+              alt="a glowing blue flower"
+            />
+            <a class="related-post-title" href="cherry.html" target="_blank"
+              >Taiwan Cherry</a
+            >
+            <p class="related-author">By Lisa Wu</p>
+          </div>
+        </li>
+
+        <li class="related-list">
+          <div class="related-post">
+            <img
+              src="img/header/related-rhododendron.jpg"
+              alt="a purple flower"
+            />
+            <a
+              class="related-post-title"
+              href="rhododendron.html"
+              target="_blank"
+              >Formosan Rhododendron</a
+            >
+            <p class="related-author">By Emily Lin</p>
+          </div>
+        </li>
+      </ul>
+    </aside>
+
+    <footer>
+      <!--==================== FOOTER ====================-->
+      <div class="news-service">
+        <div class="service-group">
+          <div class="service-logo"><h1>Botanic Gazette</h1></div>
+
+          <nav>
+            <ul class="footer-hashtage-group">
+              <li><a class="footer-hashtage" href=index.html
+                ">Home</a></li>
+              <li><a class="footer-hashtage" href="about.html">About</a></li>
+              <li>
+                <a class="footer-hashtage" href="collection.html">Collection</a>
+              </li>
+              <li><a class="footer-hashtage" href="#">News</a></li>
+            </ul>
+          </nav>
+
+          <div class="media">
+            <span class="media-follow">Follow Botanic Gazette on:</span>
+
+            <div class="media-icon-group">
+              <button class="media-icon">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </button>
+              <button class="media-icon">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </button>
+              <button class="media-icon">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </button>
+              <button class="media-icon">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="copyright" id="copyright">
+        &copy; <span class="year">2024</span> by <strong>BOTANIC GAZETTE</strong> . All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

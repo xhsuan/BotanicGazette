@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+
+    <title>Botanic Gazette</title>
+  </head>
+
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header sticky">
+      <a class="header-brand-name" href="#hero"><h1>Botanic Gazette</h1></a>
+
+      <nav class="header-nav">
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#hero">Home</a></li>
+            <li><a class="main-nav-link" href="about.html">About</a></li>
+            <li>
+              <a class="main-nav-link" href="collection.html">collection</a>
+            </li>
+            <li><a class="main-nav-link" href="#">News</a></li>
+            <button class="main-nav-btn">Login</button>
+          </ul>
+        </nav>
+
+        <button class="search-icon">
+          <ion-icon name="search-outline" class="search-btn"></ion-icon>
+          <ion-icon name="close-outline" class="close-btn"></ion-icon>
+        </button>
+
+        <button class="mobile-nav-btn">
+          <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+          <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </button>
+      </nav>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search here..." />
+      </div>
+    </header>
+
+    <!--==================== LOGIN ====================-->
+    <div class="login-wrap">
+      <span class="login-close-icon"><ion-icon name="close"></ion-icon></span>
+
+      <!--================== LOGIN ==================-->
+      <div class="login-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="mail-outline"></ion-icon
+            ></span>
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="lock-closed-outline"></ion-icon
+            ></span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="remember-forget">
+            <label><input type="checkbox" />Remember me</label>
+            <a href="#">Forget Password?</a>
+          </div>
+          <button type="submit" class="login-btn">Login</button>
+          <div class="login-register">
+            <p>
+              Don't have an account?
+              <a href="#" class="register-link">Register</a>
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <!--================== register ==================-->
+      <div class="login-box register">
+        <h2>Register</h2>
+        <form action="#">
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="person-outline"></ion-icon
+            ></span>
+            <input type="text" required />
+            <label>Username</label>
+          </div>
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="mail-outline"></ion-icon
+            ></span>
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="lock-closed-outline"></ion-icon
+            ></span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="remember-forget">
+            <label><input type="checkbox" />I agree to the terms</label>
+          </div>
+          <button type="submit" class="login-btn">Register</button>
+          <div class="login-register">
+            <p>
+              Already have an account?
+              <a href="#" class="login-link">Login</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <main>
+      <section class="section-hero" id="hero">
+        <!--==================== HERO ====================-->
+        <div class="hero-logo-box">
+          <h1 class="hero-logo-first">Botanic</h1>
+          <h1 class="hero-logo-second">Gazette</h1>
+        </div>
+        <a href="#cta-explore" class="hero-exploremore">Explore More</a>
+      </section>
+
+      <!--==================== MORE ====================-->
+      <section class="section-more">
+        <div class="container-more">
+          <div class="explore-about">
+            <img class="explore-about-img" src="img/explore/about-l.jpg" />
+
+            <div class="explore-about-content">
+              <p>
+                We are dedicated to introducing plants worldwide. Explore our
+                categorized collections to discover the beauty of nature. Want
+                to learn more? Read our articles!
+              </p>
+              <a class="explore-about-link" href="about.html" id="cta-explore"
+                >More About Us</a
+              >
+            </div>
+
+            <img class="explore-about-img" src="img/explore/about-r.jpg" />
+          </div>
+
+          <div class="container-header-more">
+            <h2 class="header-more">
+              Explore our collection and start your plant journey
+            </h2>
+          </div>
+
+          <div class="collection">
+            <div class="collection-content">
+              <img
+                class="collection-img"
+                src="img/explore/tree-2.jpg"
+                alt="A small tree"
+              />
+              <a class="collection-link" href="collection/tree.html">Tree</a>
+            </div>
+
+            <div class="collection-content">
+              <img
+                class="collection-img"
+                src="img/explore/herb.jpg"
+                alt="Some small potted plants"
+              />
+              <a class="collection-link" href="collection/foliage.html"
+                >Foliage plants</a
+              >
+            </div>
+
+            <div class="collection-content">
+              <img
+                class="collection-img"
+                src="img/explore/flower.jpg"
+                alt="A close up picture of white flower"
+              />
+              <a class="collection-link" href="collection/flower.html"
+                >Flower</a
+              >
+            </div>
+
+            <div class="collection-content">
+              <img
+                class="collection-img"
+                src="img/explore/fern.jpg"
+                alt="A close up picture of a fern"
+              />
+              <a class="collection-link" href="collection/fern.html">Fern</a>
+            </div>
+
+            <div class="collection-content">
+              <img
+                class="collection-img"
+                src="img/explore/succulent.jpg"
+                alt="Some potted plant with succulents"
+              />
+              <a class="collection-link" href="collection/succulent.html"
+                >Succulent</a
+              >
+            </div>
+
+            <div class="collection-content">
+              <img
+                class="collection-img"
+                src="img/explore/green.jpg"
+                alt="A clos up picture of a green leaf"
+              />
+              <a class="collection-link" href="three-related.html">News</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!--==================== FOOTER ====================-->
+      <div class="news-service">
+        <div class="service-group">
+          <div class="service-logo"><h1>Botanic Gazette</h1></div>
+
+          <nav>
+            <ul class="footer-hashtage-group">
+              <li><a class="footer-hashtage" href="#hero">Home</a></li>
+              <li><a class="footer-hashtage" href="about.html">About</a></li>
+              <li>
+                <a class="footer-hashtage" href="collection.html">Collection</a>
+              </li>
+              <li><a class="footer-hashtage">News</a></li>
+            </ul>
+          </nav>
+
+          <div class="media">
+            <span class="media-follow">Follow Botanic Gazette on:</span>
+
+            <div class="media-icon-group">
+              <button class="media-icon">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </button>
+              <button class="media-icon">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </button>
+              <button class="media-icon">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </button>
+              <button class="media-icon">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="copyright" id="copyright">
+        &copy; <span class="year">2024</span> by
+        <strong>BOTANIC GAZETTE</strong> . All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

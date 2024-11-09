@@ -1,0 +1,359 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1 rem = 1 em = 16px */
+
+/*======== BELOW 1344PX (smaller desktops) ========*/
+
+@media (max-width: 84em) {
+  .hero-logo-first,
+  .hero-logo-second {
+    font-size: 7.4rem;
+  }
+
+  .container-header-more {
+    /* height: 8rem; */
+    max-width: 86rem;
+  }
+
+  .header-more {
+    top: 5.4rem;
+  }
+
+  .explore-about {
+    max-width: 120rem;
+  }
+
+  .explore-about-img {
+    height: 18rem;
+  }
+}
+
+/*======== BELOW 1200PX (landscape tablets) ========*/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px = 0.5625 */
+    font-size: 56.25%;
+  }
+
+  .explore-about {
+    gap: 6rem;
+  }
+
+  .collection {
+    max-width: 90rem;
+    gap: 4rem;
+  }
+
+  /********** collection **********/
+  .collection-page .collection-group-outer {
+    max-width: 100rem;
+  }
+}
+
+/*======== BELOW 960PX (tablets) ========*/
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+
+  .explore-about {
+    max-width: 110rem;
+  }
+
+  .explore-about-img {
+    height: 16rem;
+  }
+
+  .collection {
+    gap: 3.6rem;
+    margin-bottom: 6.4rem;
+    max-width: 110rem;
+  }
+
+  /********** collection **********/
+  .collection-page .collection-group-outer {
+    max-width: 90rem;
+  }
+}
+
+/*======== BELOW 832PX (tablets) ========*/
+
+@media (max-width: 52em) {
+  .explore-about {
+    max-width: 100rem;
+    gap: 2.4rem;
+  }
+
+  .collection {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 68rem;
+  }
+
+  .mobile-nav-btn {
+    display: block;
+    z-index: 10;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* display: hide; */
+
+    /* 1) Hide it visiually */
+    opacity: 0;
+
+    /* 2) Make it unaccessable to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen reader */
+    visibility: none;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .mobile-nav-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .mobile-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+    /* margin-top: 6rem; */
+  }
+
+  .main-nav-link,
+  .main-nav-btn {
+    font-size: 2.4rem;
+  }
+
+  .search-icon {
+    margin-right: 1.6rem;
+    font-size: 2.4rem;
+  }
+
+  /********** collection **********/
+  .collection-group-outer {
+    max-width: 80rem;
+  }
+
+  .collection-page {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 80rem;
+  }
+
+  .collection-page-link {
+    font-size: 2.8rem;
+  }
+
+  .collection-page-content-detail {
+    font-size: 1.8rem;
+  }
+
+  .collection-page-link-more {
+    font-size: 2rem;
+  }
+}
+
+/*======== BELOW 704PX (smaller tablets) ========*/
+
+@media (max-width: 44em) {
+  .explore-about {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+  }
+
+  .explore-about-content {
+    font-size: 2rem;
+    max-width: 56rem;
+    line-height: 2.8rem;
+  }
+
+  .explore-about-img {
+    object-fit: cover;
+    height: 12rem;
+    width: 56rem;
+  }
+
+  .header-more {
+    top: 6rem;
+  }
+
+  .collection {
+    max-width: 63rem;
+  }
+
+  .about-article {
+    max-width: 56rem;
+    line-height: 1.6;
+  }
+
+  .main-article {
+    max-width: 56rem;
+  }
+
+  .journalist-img {
+    width: 50rem;
+    height: auto;
+  }
+
+  /********** collection **********/
+  .collection-group-outer {
+    max-width: 60rem;
+  }
+
+  .collection-page {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 60rem;
+  }
+}
+
+/*======== BELOW 544PX (tablets) ========*/
+
+@media (max-width: 34em) {
+  /* .explore-about {
+    max-width: 48rem;
+  } */
+
+  .container-header-more {
+    max-width: 58rem;
+  }
+
+  .explore-about-img {
+    object-fit: cover;
+    height: 12rem;
+    width: 48rem;
+  }
+
+  .explore-about-content {
+    max-width: 48rem;
+  }
+
+  .collection {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 30rem;
+  }
+
+  /* .collection-img {
+    
+  } */
+
+  .about-article {
+    max-width: 48rem;
+  }
+
+  .content {
+    line-height: 1.6;
+  }
+
+  /* .post-headder {
+    position: relative;
+  } */
+
+  .main-article {
+    max-width: 50rem;
+  }
+
+  .journalist-img {
+    width: 40rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 4.8rem;
+  }
+
+  /********** collection **********/
+
+  .collection-group {
+    font-size: 1.4rem;
+  }
+
+  .collection-page .collection-group-outer {
+    max-width: 52rem;
+  }
+}
+
+/*======== RESPONSIVE ========*/
+/* @media (max-width: 60rem) {
+  .search-box {
+    width: 50%;
+  }
+
+  .search-box.active {
+    width: 40%;
+  }
+
+  .search-btn {
+    transform: translateX(1rem);
+  }
+
+  .menu-outline {
+    position: absolute;
+    display: block;
+    font-size: 2.4rem;
+    cursor: pointer;
+    transform: translateX(3rem);
+    z-index: 10;
+    margin: 0 2rem;
+  }
+
+  .main-nav-list {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    right: -100%;
+  }
+
+  .main-nav-list.open {
+    z-index: 10;
+    top: 8rem;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    max-height: 50vh;
+    overflow-y: auto;
+    padding: 3rem;
+    margin: 0;
+    box-shadow: 0 8px 16px hsla(120, 12%, 23%, 0.15);
+  }
+
+  .main-nav-list button {
+    width: auto;
+    padding-right: 1.2rem;
+  }
+
+  .main-nav-list.open .nav-cta {
+    background-color: transparent;
+    color: #333;
+    padding: 0;
+  }
+
+  .hide {
+    display: none;
+  }
+} */

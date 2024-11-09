@@ -1,0 +1,153 @@
+.space {
+  height: 12.8rem;
+}
+
+.collection-group-outer {
+  padding: 8rem 2rem 0 2rem;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.collection-group-title-wrap {
+  max-width: 110rem;
+  margin: 0 auto;
+  margin-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+/* .collection-group-title-container {
+} */
+
+.collection-group-title-first {
+  color: #999;
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+.collection-group-title-second {
+  color: #555;
+  font-size: 4.2rem;
+  font-weight: 600;
+}
+
+.collection-group-menu-wrap {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.collection-group-menu {
+  display: flex;
+}
+
+.collection-group {
+  list-style: none;
+  font-size: 1.6rem;
+  padding-right: 2rem;
+}
+
+.collection-group-menu > li:not(:first-child)::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  bottom: 0.3rem;
+  width: 2px;
+  height: 2px;
+  background-color: #999;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+.collection-group-item {
+  text-decoration: none;
+  color: #999;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.collection-group-item:hover {
+  color: #555;
+}
+
+.page-now {
+  color: #555;
+}
+
+.page-now::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110%;
+  height: 1px;
+  background-color: #777;
+}
+
+.collection-page {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6.4rem;
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 3.2rem 2rem 0 2rem;
+  margin-bottom: 8rem;
+  margin-top: 2rem;
+}
+
+.collection-page-content {
+  display: grid;
+  margin-bottom: 6.4rem;
+}
+/* .collection-page-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 60rem;
+  margin: 0 auto;
+  margin-bottom: 8rem;
+}*/
+
+.collection-page-content-img {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 2.4rem;
+}
+
+/* .collection-page-link::after {
+  content: "";
+  width: 56rem;
+  height: 0.32rem;
+  background-color: rgb(110, 122, 107, 0.4);
+  position: absolute;
+  top: -2rem;
+  left: -4rem;
+} */
+
+.collection-page-link {
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #777;
+  position: relative;
+}
+
+.collection-page-content-detail {
+  font-size: 1.6rem;
+  color: #777;
+  margin: 3.6rem 0 1.2rem 0;
+  line-height: 1.4;
+}
+
+.collection-page-link-more {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #aeb5b2;
+}
+
+.collection-page-link-more:hover {
+  color: #94a19c;
+}
