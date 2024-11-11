@@ -11,8 +11,8 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/queries.css" />
 
     <script
       type="module"
@@ -23,7 +23,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
-    <script defer src="js/script.js"></script>
+    <script defer src="../js/script.js"></script>
 
     <title>About Us｜Botanic Gazette</title>
   </head>
@@ -36,9 +36,9 @@
         <nav class="main-nav">
           <ul class="main-nav-list">
             <li><a class="main-nav-link" href="index.html">Home</a></li>
-            <li><a class="main-nav-link" href="about.html">About</a></li>
+            <li><a class="main-nav-link" href="#">About</a></li>
             <li><a class="main-nav-link" href="collection.html">collection</a></li>
-            <li><a class="main-nav-link" href="#">News</a></li>
+            <li><a class="main-nav-link" href="news/three-related.html">News</a></li>
             <button class="main-nav-btn">Login</button>
           </ul>
         </nav>
@@ -135,7 +135,7 @@
     </div>
 
     <article class="about-content">
-      <img class="about-title-img" src="img/header/about.jpg" alt="close up of wood" />
+      <img class="about-title-img" src="../img/header/about.jpg" alt="close up of wood" />
       <div class="about-title">
         <ion-icon name="flower-outline"></ion-icon>
         <span>About Us</span>
@@ -208,35 +208,5 @@
         &copy; <span class="year">2024</span> by <strong>BOTANIC GAZETTE</strong> . All rights reserved.
       </p>
     </footer>
-
-    
-
-    <!-- <script>
-      let searchBtn = document.querySelector(".search-btn");
-      let closeBtn = document.querySelector(".close-btn");
-      let searchBox = document.querySelector(".search-box");
-      let mainNavList = document.querySelector(".main-nav-list");
-      let menuOutline = document.querySelector(".menu-outline");
-
-      searchBtn.onclick = function () {
-        searchBox.classList.add("active");
-        searchBtn.classList.add("active");
-        closeBtn.classList.add("active");
-        menuOutline.classList.add("hide");
-        mainNavList.classList.remove("open");
-      };
-      closeBtn.onclick = function () {
-        searchBox.classList.remove("active");
-        searchBtn.classList.remove("active");
-        closeBtn.classList.remove("active");
-        menuOutline.classList.remove("hide");
-      };
-      menuOutline.onclick = function () {
-        mainNavList.classList.toggle("open");
-        searchBox.classList.remove("active");
-        searchBtn.classList.remove("active");
-        closeBtn.classList.remove("active");
-      };
-    </script> -->
   </body>
 </html>

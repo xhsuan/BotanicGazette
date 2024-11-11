@@ -103,6 +103,7 @@ const loginLink = document.querySelector(".login-link");
 const registerLink = document.querySelector(".register-link");
 const loginPopup = document.querySelector(".main-nav-btn");
 const loginClose = document.querySelector(".login-close-icon");
+const subscribeBtn = document.querySelector(".subscribe-btn");
 
 registerLink.addEventListener("click", () => {
   loginWrap.classList.add("active");
@@ -116,6 +117,9 @@ loginPopup.addEventListener("click", () => {
   loginWrap.classList.add("active-popup");
 });
 
+subscribeBtn.addEventListener("click", () => {
+  loginWrap.classList.add("active-popup");
+});
 loginClose.addEventListener("click", () => {
   loginWrap.classList.remove("active-popup");
 });
