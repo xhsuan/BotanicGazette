@@ -120,6 +120,8 @@ loginPopup.addEventListener("click", () => {
 subscribeBtn.addEventListener("click", () => {
   loginWrap.classList.add("active-popup");
 });
+
 loginClose.addEventListener("click", () => {
   loginWrap.classList.remove("active-popup");
+  loginWrap.classList.remove("active");
 });
