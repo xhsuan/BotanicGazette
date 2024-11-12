@@ -85,11 +85,11 @@ loginPopup.addEventListener("click", () => {
   loginWrap.classList.add("active-popup");
 });
 
-subscribeBtn.addEventListener("click", () => {
-  loginWrap.classList.add("active-popup");
-});
-
 loginClose.addEventListener("click", () => {
   loginWrap.classList.remove("active-popup");
-  // loginWrap.classList.remove("active");
+  loginWrap.classList.remove("active");
+});
+
+subscribeBtn.addEventListener("click", () => {
+  loginWrap.classList.add("active-popup");
 });
