@@ -1,5 +1,3 @@
-// console.log("Hello world!");
-
 //////////////////////////////////////////////////////////////
 // Set current year
 const yearEl = document.querySelector(".year");
@@ -67,36 +65,6 @@ allLinks.forEach(function (link) {
 });
 
 //////////////////////////////////////////////////////////////
-//Sticky navigation
-// const sectionHeroEl = document.querySelector(".section-hero");
-
-// const obs = new IntersectionObserver(
-//   function (entries) {
-//     const ent = entries[0];
-//     console.log(ent);
-
-//     if (ent.isIntersecting === false) {
-//       document.body.classList.add("sticky");
-//     }
-
-//     if (ent.isIntersecting === true) {
-//       document.body.classList.remove("sticky");
-//     }
-//   },
-//   {
-//     // In the viewport
-//     root: null,
-//     threshold: 0,
-//     rootMargin: "-80px",
-//   }
-// );
-// obs.observe(sectionHeroEl);
-
-// window.addEventListener("scroll", function () {
-//   headerEl.classList.toggle("sticky", window.scrollY > 0);
-// });
-
-//////////////////////////////////////////////////////////////
 //Login
 const loginWrap = document.querySelector(".login-wrap");
 const loginLink = document.querySelector(".login-link");
@@ -123,5 +91,5 @@ subscribeBtn.addEventListener("click", () => {
 
 loginClose.addEventListener("click", () => {
   loginWrap.classList.remove("active-popup");
-  loginWrap.classList.remove("active");
+  // loginWrap.classList.remove("active");
 });
