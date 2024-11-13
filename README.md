@@ -18,16 +18,22 @@ We provide easy-to-understand information and stunning visuals to enhance your a
 #### Steps 1 : Install Git LFS
 
 1. Install Git LFS on your system:
+
    > Windows : <br /> [Git LFS installation file](https://git-lfs.com/)
-   > macOS : <br /> Use Homebrew install, and execute instruction below:
+
+   > macOS : <br /> Use Homebrew install, and execute instruction below :
+
    ```
    brew install git-lfs
    ```
+
    > Linux : <br /> Install by the instruction below ( example for Ubuntu )
+
    ```
    sudo apt install git-lfs
    ```
-2. After installation, execute initialization instruction:
+
+2. After installation, execute initialization instruction :
    ```
    git lfs install
    ```
@@ -48,13 +54,13 @@ Then you can finally enjoy your journey in **Botanic Gazette**!
 
 This is my first website after learning front-end technologies.
 
-- I use the simple technologies below:
+- I use the simple technologies below :
 
   > HTML <br />
   > CSS <br />
   > JavaScript
 
-- All the icon used in **Botanic Gazette**:
+- All the icon used in **Botanic Gazette** :
   > [Ionicons](https://ionic.io/ionicons)
 - Other tools:
   > Git, GitHub
@@ -62,6 +68,11 @@ This is my first website after learning front-end technologies.
 ---
 
 ### 🪴 Project Background
+
+This project is created to enhannce my frontend development skills and share my passion for plants.  
+Through building this website, I reinforced my foundational frontend skills and learnt essential Git commands.  
+Starting from scratch provided invaluable hands-on experience, allowing me to deepen my understanding of web development principles.  
+This project has not only enhanced my technical skills but also boosted my confidence in creating and managing projects independently.
 
 ---
 
