@@ -5,11 +5,15 @@
 This is a website introducing plants worldwide.  
 We provide easy-to-understand information and stunning visuals to enhance your appreciation for the wonders of the plant!
 
+![image](https://github.com/xhsuan/BotanicGazette/blob/main/homepage.gif)
+
 ### 🪴 Features
 
 - **Diverse Plant Categories** : <br /> Includes Trees, Foliage Plants, Flowers, Ferns, Succulents, and some news.
 - **Detailed Descriptions** : <br /> Each category provides detailed information, including images, care tips, usage, and more.
 - **Interactive Exploration** : <br /> Users can select plant types that interest them and explore related content.
+
+![image](https://github.com/xhsuan/BotanicGazette/blob/main/guide.gif)
 
 ---
 
