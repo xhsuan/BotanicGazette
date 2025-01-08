@@ -1,3 +1,296 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ed1f0d55bc7128570ba55ed6b1795d1782560be8e044819fd2242336f38045a4
-size 10580
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/article.css" />
+    <link rel="stylesheet" href="../../css/queries.css" />
+    
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    
+    <script defer src="../../js/script.js"></script>
+
+    <title>Bird's-nest Fern｜Botanic Gazette</title>
+  </head>
+
+  <body>
+    <header class="header sticky">
+      <a class="header-brand-name" href="../../index.html"><h1>Botanic Gazette</h1></a>
+
+      <nav class="header-nav">
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="../../index.html">Home</a></li>
+            <li><a class="main-nav-link" href="../about.html">About</a></li>
+            <li>
+              <a class="main-nav-link" href="../collection.html">collection</a>
+            </li>
+            <li><a class="main-nav-link" href="../collection/all-articles.html">News</a></li>
+            <button class="main-nav-btn">Login</button>
+          </ul>
+        </nav>
+
+        <button class="search-icon">
+          <ion-icon name="search-outline" class="search-btn"></ion-icon>
+          <ion-icon name="close-outline" class="close-btn"></ion-icon>
+        </button>
+
+        <button class="mobile-nav-btn">
+          <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+          <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </button>
+      </nav>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search here..." />
+      </div>
+    </header>
+
+    <!--==================== LOGIN ====================-->
+    <div class="login-wrap">
+      <span class="login-close-icon"><ion-icon name="close"></ion-icon></span>
+
+      <!--================== LOGIN ==================-->
+      <div class="login-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="mail-outline"></ion-icon
+            ></span>
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="lock-closed-outline"></ion-icon
+            ></span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="remember-forget">
+            <label><input type="checkbox" />Remember me</label>
+            <a href="#">Forget Password?</a>
+          </div>
+          <button type="submit" class="login-btn">Login</button>
+          <div class="login-register">
+            <p>
+              Don't have an account?
+              <a href="#" class="register-link">Register</a>
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <!--================== register ==================-->
+      <div class="login-box register">
+        <h2>Register</h2>
+        <form action="#">
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="person-outline"></ion-icon
+            ></span>
+            <input type="text" required />
+            <label>Username</label>
+          </div>
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="mail-outline"></ion-icon
+            ></span>
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="lock-closed-outline"></ion-icon
+            ></span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="remember-forget">
+            <label><input type="checkbox" />I agree to the terms</label>
+          </div>
+          <button type="submit" class="login-btn">Register</button>
+          <div class="login-register">
+            <p>
+              Already have an account?
+              <a href="#" class="login-link">Login</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="main-article">
+      <header class="post-headder">
+        <h2 class="article-title">Bird's-nest Fern</h2>
+        <p class="date">Saterday, September 21st 2024</p>
+
+        <div class="journalist">
+          <p class="author">
+            By
+            <strong>Alex Huang</strong>
+          </p>
+
+          <div class="author-imgs">
+            <img
+              src="../../img/journalist/alex-huang.jpg"
+              alt="Headshot of alex-huang"
+            />
+          </div>
+
+          <div class="share-and-save">
+            <button class="share" href="#">
+              <span>Share</span>
+              <ion-icon
+                class="share-icon"
+                name="share-social-outline"
+              ></ion-icon>
+            </button>
+
+            <button class="save" href="#">
+              <span>Save</span>
+              <ion-icon class="save-icon" name="flower-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+
+        <img
+          class="journalist-img"
+          src="../../img/header/bird's-nest-fern.jpg"
+          alt="bird's-nest-fern"
+        />
+      </header>
+
+      <article class="content">
+        <ul class="information">
+          <li class="info-list">
+            <p class="info-title">Scientific name：</p>
+            <p class="info-content">Asplenium Antiquum</p>
+          </li>
+          <li class="info-list">
+            <p class="info-title">Common name ：</p>
+            <p class="info-content">Nest Fern、Crown's Nest Fern</p>
+          </li>
+        </ul>
+
+        <h3 class="content-title">
+          <ion-icon name="flower-outline"></ion-icon>Description
+        </h3>
+        <ul class="content-list">
+          <li class="content-list-detail">
+            A perennial epiphytic herb of the genus Asplenium, distributed from
+            Africa, Polynesia, Australia, tropical Asia, and Southeast Asia.
+          </li>
+          <li class="content-list-detail">
+            Rhizomes short and stout; fronds produced from rhizomes in annular
+            arrangement and spreading outward to create a massive leaf nest.
+          </li>
+          <li class="content-list-detail">
+            Fronds lanceolate, apex acuminate, entire and slightly wavy; midribs
+            prominently protruding on the underside; frond green on the upper
+            surface.
+          </li>
+          <li class="content-list-detail">
+            Petiole short and fleshy, black, with black-brown linear scales at
+            the base; sori arranged linearly between the midrib and the margin;
+            spreading from the midrib and along the lateral veins.
+          </li>
+        </ul>
+
+        <h3 class="content-title">
+          <ion-icon name="flower-outline"></ion-icon>Cultivation
+        </h3>
+        <ul class="content-list">
+          <li class="content-list-detail">
+            The plants grow slowly in winter, but develop rapidly in summer and
+            autumn, preferable temperature between 20-30°C.
+          </li>
+          <li class="content-list-detail">
+            Keep out of direct sunlight while still providing bright, indirect
+            light.
+          </li>
+          <li class="content-list-detail">Propagated by spores.</li>
+        </ul>
+
+        <h3 class="content-title">
+          <ion-icon name="flower-outline"></ion-icon>Application
+        </h3>
+        <ul class="content-list">
+          <li class="content-list-detail">
+            Can be used as shade groundcover, planted in pots indoors, in small
+            pots or as epiphyte.
+          </li>
+        </ul>
+
+        <nav>
+          <ul class="hashtage-group">
+            <li><a class="hashtage">Bird's-nest Ferns</a></li>
+            <li><a class="hashtage">Herb</a></li>
+            <li><a class="hashtage">Fern</a></li>
+          </ul>
+        </nav>
+      </article>
+    </div>
+
+    <footer>
+      <!--==================== FOOTER ====================-->
+      <div class="news-service">
+        <div class="service-group">
+          <div class="service-logo"><h1>Botanic Gazette</h1></div>
+
+          <nav>
+            <ul class="footer-hashtage-group">
+              <li><a class="footer-hashtage" href=../../index.html
+                ">Home</a></li>
+              <li><a class="footer-hashtage" href="../about.html">About</a></li>
+              <li>
+                <a class="footer-hashtage" href="../collection.html">Collection</a>
+              </li>
+              <li><a class="footer-hashtage" href="../collection/all-articles.html">News</a></li>
+            </ul>
+          </nav>
+
+          <div class="media">
+            <span class="media-follow">Follow Botanic Gazette on:</span>
+
+            <div class="media-icon-group">
+              <button class="media-icon">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </button>
+              <button class="media-icon">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </button>
+              <button class="media-icon">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </button>
+              <button class="media-icon">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="copyright" id="copyright">
+        &copy; <span class="year">2024</span> by <strong>BOTANIC GAZETTE</strong> . All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

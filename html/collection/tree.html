@@ -1,3 +1,241 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f7283cef376b62d0a1ec6c8f1846ca40481e8f3a1ac235b1ce1fc73d867c97df
-size 9279
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/collection.css" />
+    <link rel="stylesheet" href="../../css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="../../js/script.js"></script>
+
+    <title>tree｜Botanic Gazette</title>
+  </head>
+
+  <body>
+    <header class="header sticky">
+      <a class="header-brand-name" href="../../index.html"><h1>Botanic Gazette</h1></a>
+
+      <nav class="header-nav">
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="../../index.html">Home</a></li>
+            <li><a class="main-nav-link" href="../about.html">About</a></li>
+            <li>
+              <a class="main-nav-link" href="../collection.html">collection</a>
+            </li>
+            <li><a class="main-nav-link" href="../collection/all-articles.html">News</a></li>
+            <button class="main-nav-btn">Login</button>
+          </ul>
+        </nav>
+
+        <button class="search-icon">
+          <ion-icon name="search-outline" class="search-btn"></ion-icon>
+          <ion-icon name="close-outline" class="close-btn"></ion-icon>
+        </button>
+
+        <button class="mobile-nav-btn">
+          <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+          <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </button>
+      </nav>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search here..." />
+      </div>
+    </header>
+
+    <!--==================== LOGIN ====================-->
+    <div class="login-wrap">
+      <span class="login-close-icon"><ion-icon name="close"></ion-icon></span>
+
+      <!--================== LOGIN ==================-->
+      <div class="login-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="mail-outline"></ion-icon
+            ></span>
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="lock-closed-outline"></ion-icon
+            ></span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="remember-forget">
+            <label><input type="checkbox" />Remember me</label>
+            <a href="#">Forget Password?</a>
+          </div>
+          <button type="submit" class="login-btn">Login</button>
+          <div class="login-register">
+            <p>
+              Don't have an account?
+              <a href="#" class="register-link">Register</a>
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <!--================== register ==================-->
+      <div class="login-box register">
+        <h2>Register</h2>
+        <form action="#">
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="person-outline"></ion-icon
+            ></span>
+            <input type="text" required />
+            <label>Username</label>
+          </div>
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="mail-outline"></ion-icon
+            ></span>
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="lock-closed-outline"></ion-icon
+            ></span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="remember-forget">
+            <label><input type="checkbox" />I agree to the terms</label>
+          </div>
+          <button type="submit" class="login-btn">Register</button>
+          <div class="login-register">
+            <p>
+              Already have an account?
+              <a href="#" class="login-link">Login</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="space" id="collection"></div>
+    <section class="collection-group-outer">
+      <div class="collection-group-title-wrap">
+        <div class="collection-group-title-container">
+          <h3 class="collection-group-title-first">Our Collection</h3>
+        </div>
+        <div class="collection-group-title-container">
+          <h1 class="collection-group-title-second">Tree</h1>
+        </div>
+      </div>
+      
+      <div class="collection-group-menu-wrap">
+        <ul class="collection-group-menu">
+          <li class="collection-group">
+            <a class="collection-group-item page-now" href="#">Tree</a>
+          </li>
+          <li class="collection-group">
+            <a class="collection-group-item" href="foliage.html">foliage plants</a>
+          </li>
+          <li class="collection-group">
+            <a class="collection-group-item" href="flower.html">Flower</a>
+          </li>
+          <li class="collection-group">
+            <a class="collection-group-item" href="fern.html">Fern</a>
+          </li>
+          <li class="collection-group">
+            <a class="collection-group-item" href="succulent.html">Succulent</a>
+          </li>
+          <li class="collection-group">
+            <a class="collection-group-item" href="all-articles.html">All Articles</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="collection-page">
+      <div class="collection-page-content">
+        <img
+        class="collection-page-content-img"
+        src="../../img/flower/cherry-blossom.jpg"
+        alt="A small tree"
+        />
+        <a class="collection-page-link" href="../tree/cherry.html">Taiwan Cherry</a>
+        <p class="collection-page-content-detail">Taiwan cherry, one of the most popular native flowers of Taiwan, the attractive rosy pink of the petal make Taiwan cherry stands out from other numerous plants. When is the most appropriate time to see the blossom?</p>
+        <a class="collection-page-link-more" href="../tree/cherry.html">READ MORE &#8599;</a>
+      </div>
+      <div class="collection-page-content">
+        <img
+        class="collection-page-content-img"
+        src="../../img/flower/rhododendron.jpg"
+        alt="A small tree"
+        />
+        <a class="collection-page-link" href="../flower/rhododendron.html">Taiwan Rhododendron</a>
+        <p class="collection-page-content-detail">Taiwan Rhododendron captivates with its delicate pink and white petals and graceful form. Its unique beauty makes it stand out among the island's diverse flora.</p>
+        <a class="collection-page-link-more" href="../flower/rhododendron.html">READ MORE &#8599;</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="news-service">
+        <div class="service-group">
+          <div class="service-logo"><h1>Botanic Gazette</h1></div>
+
+          <nav>
+            <ul class="footer-hashtage-group">
+              <li><a class="footer-hashtage" href=../../index.html
+                ">Home</a></li>
+              <li><a class="footer-hashtage" href="../about.html">About</a></li>
+              <li>
+                <a class="footer-hashtage" href="../collection.html">Collection</a>
+              </li>
+              <li><a class="footer-hashtage" href="../collection/all-articles.html">News</a></li>
+            </ul>
+          </nav>
+
+          <div class="media">
+            <span class="media-follow">Follow Botanic Gazette on:</span>
+
+            <div class="media-icon-group">
+              <button class="media-icon">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </button>
+              <button class="media-icon">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </button>
+              <button class="media-icon">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </button>
+              <button class="media-icon">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="copyright" id="copyright">
+        &copy; <span class="year">2024</span> by <strong>BOTANIC GAZETTE</strong> . All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

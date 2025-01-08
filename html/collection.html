@@ -1,3 +1,247 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3e37bed79c44f279b7ba38703274cbc8019686ff32f73033d7f24a235845d927
-size 10608
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/collection.css" />
+    <link rel="stylesheet" href="../css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+
+    <title>collection｜Botanic Gazette</title>
+  </head>
+
+  <body>
+    <header class="header sticky">
+      <a class="header-brand-name" href="../index.html"><h1>Botanic Gazette</h1></a>
+
+      <nav class="header-nav">
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="../index.html">Home</a></li>
+            <li><a class="main-nav-link" href="about.html">About</a></li>
+            <li>
+              <a class="main-nav-link" href="#collection">collection</a>
+            </li>
+            <li><a class="main-nav-link" href="collection/all-articles.html">News</a></li>
+            <button class="main-nav-btn">Login</button>
+          </ul>
+        </nav>
+
+        <button class="search-icon">
+          <ion-icon name="search-outline" class="search-btn"></ion-icon>
+          <ion-icon name="close-outline" class="close-btn"></ion-icon>
+        </button>
+
+        <button class="mobile-nav-btn">
+          <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+          <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </button>
+      </nav>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search here..." />
+      </div>
+    </header>
+
+    <!--==================== LOGIN ====================-->
+    <div class="login-wrap">
+      <span class="login-close-icon"><ion-icon name="close"></ion-icon></span>
+
+      <!--================== LOGIN ==================-->
+      <div class="login-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="mail-outline"></ion-icon
+            ></span>
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="lock-closed-outline"></ion-icon
+            ></span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="remember-forget">
+            <label><input type="checkbox" />Remember me</label>
+            <a href="#">Forget Password?</a>
+          </div>
+          <button type="submit" class="login-btn">Login</button>
+          <div class="login-register">
+            <p>
+              Don't have an account?
+              <a href="#" class="register-link">Register</a>
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <!--================== register ==================-->
+      <div class="login-box register">
+        <h2>Register</h2>
+        <form action="#">
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="person-outline"></ion-icon
+            ></span>
+            <input type="text" required />
+            <label>Username</label>
+          </div>
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="mail-outline"></ion-icon
+            ></span>
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div class="login-input-box">
+            <span class="login-icon"
+              ><ion-icon name="lock-closed-outline"></ion-icon
+            ></span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="remember-forget">
+            <label><input type="checkbox" />I agree to the terms</label>
+          </div>
+          <button type="submit" class="login-btn">Register</button>
+          <div class="login-register">
+            <p>
+              Already have an account?
+              <a href="#" class="login-link">Login</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="space" id="collection"></div>
+    <article class="collection-page">
+      <div class="collection-page-content">
+        <img
+        class="collection-page-content-img"
+        src="../img/collection/green.jpg"
+        alt="A small tree"
+        />
+        <a class="collection-page-link" href="collection/all-articles.html">All Articles</a>
+        <p class="collection-page-content-detail"> Lots of people are obsessed with the charm of succulents. But with so many varieties, it’s hard to know the best way to care for each one. Where do these unique plants come from, and how can you keep them thriving indoors?</p>
+        <a class="collection-page-link-more" href="collection/all-articles.html">READ MORE &#8599;</a>
+      </div>
+      <div class="collection-page-content">
+        <img
+          class="collection-page-content-img"
+          src="../img/collection/tree.jpg"
+          alt="tree"
+        />
+        <a class="collection-page-link" href="collection/tree.html">Collection : Tree</a>
+        <p class="collection-page-content-detail">Have you ever seen a beautiful tree by the roadside and wondered what kind it is? Or maybe you're thinking about planting a smaller tree at home to brighten up your space but aren't sure which one to choose?</p>
+        <a class="collection-page-link-more" href="collection/tree.html">READ MORE &#8599;</a>
+      </div>
+      <div class="collection-page-content">
+        <img
+        class="collection-page-content-img"
+        src="../img/collection/herb.jpg"
+        alt="herb"
+        />
+        <a class="collection-page-link" href="collection/foliage.html">Collection : Foliage plants</a>
+        <p class="collection-page-content-detail">With the  diverse patterns, foliage plants add life and style without needing constant attention.  Discover more about these low-maintenance plants and find out how to choose and care for the perfect plants for your space!</p>
+        <a class="collection-page-link-more" href="collection/foliage.html">READ MORE &#8599;</a>
+      </div>
+      <div class="collection-page-content">
+        <img
+        class="collection-page-content-img"
+        src="../img/collection/flower.jpg"
+        alt="flower"
+        />
+        <a class="collection-page-link" href="collection/flower.html">Collection : Flower</a>
+        <p class="collection-page-content-detail">Who doesn’t feel happy when they see flowers? But how do you take care of flowers bought from the market? With thousands of types of flowers in the world, where do they come from, and what environments do they thrive in?</p>
+        <a class="collection-page-link-more" href="collection/flower.html">READ MORE &#8599;</a>
+      </div>
+      <div class="collection-page-content">
+        <img
+        class="collection-page-content-img"
+        src="../img/collection/fern.jpg"
+        alt="fern"
+        />
+        <a class="collection-page-link" href="collection/fern.html">Collection : Fern</a>
+        <p class="collection-page-content-detail">Curious about the lush, timeless beauty of ferns? These ancient plants add a unique, elegance to any space. From their origins in tropical rainforests to tips for keeping them happy at home, ferns have a fascinating story to tell!</p>
+        <a class="collection-page-link-more" href="collection/fern.html">READ MORE &#8599;</a>
+      </div>
+      <div class="collection-page-content">
+        <img
+        class="collection-page-content-img"
+        src="../img/collection/succulent.jpg"
+        alt="succulent"
+        />
+        <a class="collection-page-link" href="collection/succulent.html">Collection : Succulent</a>
+        <p class="collection-page-content-detail"> Lots of people are obsessed with the charm of succulents. But with so many varieties, it’s hard to know the best way to care for each one. Where do these unique plants come from, and how can you keep them thriving indoors?</p>
+        <a class="collection-page-link-more" href="collection/succulent.html">READ MORE &#8599;</a>
+      </div>
+    </article>
+
+    <footer>
+      <div class="news-service">
+        <div class="service-group">
+          <div class="service-logo"><h1>Botanic Gazette</h1></div>
+
+          <nav>
+            <ul class="footer-hashtage-group">
+              <li><a class="footer-hashtage" href=../index.html
+                ">Home</a></li>
+              <li><a class="footer-hashtage" href="about.html">About</a></li>
+              <li>
+                <a class="footer-hashtage" href="#collection">Collection</a>
+              </li>
+              <li><a class="footer-hashtage" href="collection/all-articles.html">News</a></li>
+            </ul>
+          </nav>
+
+          <div class="media">
+            <span class="media-follow">Follow Botanic Gazette on:</span>
+
+            <div class="media-icon-group">
+              <button class="media-icon">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </button>
+              <button class="media-icon">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </button>
+              <button class="media-icon">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </button>
+              <button class="media-icon">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="copyright" id="copyright">
+        &copy; <span class="year">2024</span> by <strong>BOTANIC GAZETTE</strong> . All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
