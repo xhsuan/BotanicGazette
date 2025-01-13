@@ -19,38 +19,14 @@ We provide easy-to-understand information and stunning visuals to enhance your a
 
 ### 🪴 How to visit **Botanic Gazette**
 
-#### Steps 1 : Install Git LFS
+Botanic Gazette is deployed and accessible online.<br />For the best experience, we recommend using **Google Chrome** on devices running **Android** or other modern operating systems.
 
-1. Install Git LFS on your system:
+### Access the Website
+Visit the following URL to explore Botanic Gazette: [Botanic Gazette](https://xhsuan.github.io/BotanicGazette/)
 
-   > Windows : <br /> [Git LFS installation file](https://git-lfs.com/)
-
-   > macOS : <br /> Use Homebrew install, and execute instruction below :
-
-   ```
-   brew install git-lfs
-   ```
-
-   > Linux : <br /> Install by the instruction below ( example for Ubuntu )
-
-   ```
-   sudo apt install git-lfs
-   ```
-
-2. After installation, execute initialization instruction :
-   ```
-   git lfs install
-   ```
-
-#### Steps 2 : Clone this project
-
-```
-git clone <https://github.com/xhsuan/BotanicGazette>
-```
-
-#### Steps 3 : Open `index.html`
-
-Then you can finally enjoy your journey in **Botanic Gazette**!
+While Botanic Gazette supports multiple platforms and browsers, it is optimized for:
+- **Google Chrome** on Android-based devices.
+- Other modern browsers such as Mozilla Firefox, Microsoft Edge, and Safari.
 
 ---
 
